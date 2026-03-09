@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Motor Jaya</title>
+    <link rel="icon" type="image/png" href="logo_rentalmotor.png">
+</head>
+
+<body>
+
+    <h1>Laporan Rental Motor</h1>
+
+    <nav>
+        <a href="index.html">Dashboard</a> |
+        <a href="data_motor.html">Data Motor</a> |
+        <a href="data_customer.html">Data Customer</a> |
+        <a href="transaksi_rental.html">Transaksi Rental</a> |
+        <a href="laporan.html">Laporan</a>
+    </nav>
+
+    <h2>Laporan Transaksi Penyewaan</h2>
+
+    <form>
+    Pilih Bulan Laporan :
+    <input type="month" name="bulan_laporan">
+
+    <button type="submit">Tampilkan</button>
+</form>
+
+<br>
+
+    <table border="1">
+        <tr>
+            <th>ID Transaksi</th>
+            <th>Customer</th>
+            <th>Motor</th>
+            <th>Tanggal Sewa</th>
+            <th>Tanggal Kembali</th>
+            <th>Total</th>
+            <th>Status</th>
+        </tr>
+
+        <tr>
+            <td>TR001</td>
+            <td>Nafisah</td>
+            <td>Beat</td>
+            <td>10 Mei</td>
+            <td>12 Mei</td>
+            <td>150000</td>
+            <td>Selesai</td>
+        </tr>
+
+        <tr>
+            <td>TR002</td>
+            <td>Andi</td>
+            <td>NMAX</td>
+            <td>5 Mei</td>
+            <td>7 Mei</td>
+            <td>300000</td>
+            <td>Selesai</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <h2>Laporan Pendapatan</h2>
+
+    <ul>
+        <li>Total Transaksi Bulan Ini : 35</li>
+        <li>Pendapatan Bulan Ini : Rp5.500.000</li>
+    </ul>
+
+    <h2>Motor Paling Sering Disewa</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Motor</th>
+            <th>Jumlah Sewa</th>
+        </tr>
+
+        <tr>
+            <td>NMAX</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td>Beat</td>
+            <td>10</td>
+        </tr>
+
+    </table>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 - Rental Motor Jaya</p>
+    </footer>
+
+</body>
+
+</html>
