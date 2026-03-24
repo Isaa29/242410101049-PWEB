@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental Motor Jaya</title>
+    <link rel="icon" type="image/png" href="logo_rentalmotor.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header class="hero">
+
+        <!-- NAVBAR -->
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo_rentalmotor.png" alt="Logo" width="50">
+                    <span>Rental Motor Jaya</span>
+                </div>
+
+                <!-- MENU -->
+                <div class="menu">
+                    <a href="index.html">Dashboard</a>
+                    <a href="data_motor.html">Data Motor</a>
+                    <a href="data_customer.html">Data Customer</a>
+                    <a href="transaksi_rental.html">Transaksi Rental</a>
+                    <a href="laporan.html">Laporan</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- HERO CONTENT -->
+        <div class="hero-text">
+            <h1>#BebasKemanaAja</h1>
+            <p>Pusat Sewa Motor Terpercaya</p>
+        </div>
+
+        <div class="hero-img">
+            <img src="hero.jpg" alt="Motor">
+        </div>
+
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Motor Paling Sering Disewa</h2>
+
+            <div class="motor-grid">
+
+                <div class="motor-card">
+                    <h4>Honda Beat</h4>
+                    <p>Disewa: 120x</p>
+                </div>
+
+                <div class="motor-card">
+                    <h4>Yamaha NMAX</h4>
+                    <p>Disewa: 98x</p>
+                </div>
+
+                <div class="motor-card">
+                    <h4>Vario 160</h4>
+                    <p>Disewa: 85x</p>
+                </div>
+
+                <div class="motor-card">
+                    <h4>Scoopy</h4>
+                    <p>Disewa: 75x</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Aktivitas Terbaru</h2>
+
+            <!-- FORM  -->
+            <form class="search-form">
+                <input type="text" placeholder="Cari data...">
+                <button type="submit">Cari</button>
+            </form>
+
+            <!-- TABEL -->
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID Transaksi</th>
+                            <th>Customer</th>
+                            <th>Motor</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>TR001</td>
+                            <td>Nafisah</td>
+                            <td>Beat</td>
+                            <td>Menunggu Pembayaran</td>
+                        </tr>
+
+                        <tr>
+                            <td>TR002</td>
+                            <td>Andi</td>
+                            <td>NMAX</td>
+                            <td>Disewa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <aside>
+
+        <div class="sidebar-container">
+
+            <!-- KIRI -->
+            <div class="sidebar-left">
+                <h3>Statistik Rental</h3><br>
+
+                <label><input type="checkbox"> Motor Tersedia</label><br>
+                <label><input type="checkbox"> Motor Disewa</label>
+
+                <p>Total Motor : 20</p><br>
+                <p>Motor Tersedia : 12</p>
+                <meter value="12" min="0" max="20"></meter>
+
+                <p>Motor Disewa : 8</p>
+                <meter value="8" min="0" max="20"></meter>
+            </div>
+
+            <!-- KANAN -->
+            <div class="sidebar-right">
+                <h3>Info Terkini</h3><br>
+                <ul>
+                    <li>Total Transaksi Hari Ini: 5</li>
+                    <li>Pendapatan Hari Ini: Rp650.000</li>
+                </ul>
+            </div>
+
+        </div>
+
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Tentang</h4>
+                <p>Rental Motor terpercaya</p>
+            </div>
+            <div>
+                <h4>Lokasi</h4>
+                <p>Jl Gajah Mad No.13</p>
+            </div>
+            <div>
+                <h4>Kontak</h4>
+                <p>08123456789</p>
+                <p>jayamotor@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan - Rental Motor Jaya</title>
+    <link rel="icon" type="image/png" href="logo_rentalmotor.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo_rentalmotor.png" alt="Logo" width="50">
+                    <span>Rental Motor Jaya</span>
+                </div>
+
+                <div class="menu">
+                    <a href="index.html">Dashboard</a>
+                    <a href="data_motor.html">Data Motor</a>
+                    <a href="data_customer.html">Data Customer</a>
+                    <a href="transaksi_rental.html">Transaksi Rental</a>
+                    <a href="laporan.html">Laporan</a>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <h1>Laporan Rental Motor</h1>
+            <p>Lihat ringkasan transaksi dan pendapatan bulanan rental motor</p>
+        </div>
+
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="layout">
+        <section>
+            <h2>Laporan Transaksi Penyewaan</h2>
+
+            <form>
+                <label for="bulan_laporan">Pilih Bulan Laporan :</label>
+                <input type="month" id="bulan_laporan" name="bulan_laporan">
+                <button class="btn-2">Tampilkan</button>
+            </form>
+
+            <div class="table-container" style="margin-top: 1rem;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID Transaksi</th>
+                            <th>Customer</th>
+                            <th>Motor</th>
+                            <th>Tanggal Sewa</th>
+                            <th>Tanggal Kembali</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TR001</td>
+                            <td>Nafisah</td>
+                            <td>Beat</td>
+                            <td>10 Mei</td>
+                            <td>12 Mei</td>
+                            <td>150.000</td>
+                            <td>Selesai</td>
+                        </tr>
+                        <tr>
+                            <td>TR002</td>
+                            <td>Andi</td>
+                            <td>NMAX</td>
+                            <td>5 Mei</td>
+                            <td>7 Mei</td>
+                            <td>300.000</td>
+                            <td>Selesai</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <aside>
+        <div class="sidebar-container">
+            <div class="sidebar-left">
+
+                <h3>Laporan Pendapatan</h3><br>
+                <ul>
+                    <li>Total Transaksi Bulan Ini: 35</li>
+                    <li>Pendapatan Bulan Ini: Rp5.500.000</li>
+                </ul>
+
+            </div>
+    </aside>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Tentang</h4>
+                <p>Rental Motor terpercaya</p>
+            </div>
+            <div>
+                <h4>Lokasi</h4>
+                <p>Jl Gajah Mada No.13</p>
+            </div>
+            <div>
+                <h4>Kontak</h4>
+                <p>08123456789</p>
+                <p>jayamotor@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

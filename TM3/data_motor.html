@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Motor - Rental Motor Jaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo_rentalmotor.png" alt="Logo" width="50">
+                    <span>Rental Motor Jaya</span>
+                </div>
+
+                <div class="menu">
+                    <a href="index.html">Dashboard</a>
+                    <a href="data_motor.html">Data Motor</a>
+                    <a href="data_customer.html">Data Customer</a>
+                    <a href="transaksi_rental.html">Transaksi Rental</a>
+                    <a href="laporan.html">Laporan</a>
+                </div>
+            </div>
+        </nav>
+
+        <div>
+            <h1>Kelola Data Motor</h1>
+            <p>Tambah dan kelola data motor rental</p>
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main class="layout">
+
+        <section>
+
+            <!-- FORM (ISI TETAP, CUMA DIBUNGKUS) -->
+            <h2>Tambah Motor</h2>
+
+            <form class="search-form">
+                <input type="text" placeholder="Nama Motor">
+                <input type="text" placeholder="Nomor Motor">
+                <input type="text" placeholder="Merk">
+                <input type="number" placeholder="Tahun">
+                <input type="number" placeholder="Harga Sewa / Hari">
+                <input type="file">
+
+                <button type="submit">Simpan</button>
+            </form>
+
+            <!-- TABLE -->
+            <h2>Daftar Motor</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama Motor</th>
+                            <th>Nomor Motor</th>
+                            <th>Merk</th>
+                            <th>Tahun</th>
+                            <th>Harga Sewa</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Beat Street</td>
+                            <td>P 1234 AB</td>
+                            <td>Honda</td>
+                            <td>2022</td>
+                            <td>Rp80.000</td>
+                            <td>Tersedia</td>
+                            <td>
+                                <button class="btn-1">Edit</button>
+                                <button class="btn-2">Hapus</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>NMAX</td>
+                            <td>P 4321 CD</td>
+                            <td>Yamaha</td>
+                            <td>2023</td>
+                            <td>Rp150.000</td>
+                            <td>Disewa</td>
+                            <td>
+                                <button class="btn-1">Edit</button>
+                                <button class="btn-2">Hapus</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Vario 160</td>
+                            <td>P 5678 EF</td>
+                            <td>Honda</td>
+                            <td>2024</td>
+                            <td>Rp120.000</td>
+                            <td>Tersedia</td>
+                            <td>
+                                <button class="btn-1">Edit</button>
+                                <button class="btn-2">Hapus</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Aerox</td>
+                            <td>P 9876 GH</td>
+                            <td>Yamaha</td>
+                            <td>2023</td>
+                            <td>Rp130.000</td>
+                            <td>Tersedia</td>
+                            <td>
+                                <button class="btn-1">Edit</button>
+                                <button class="btn-2">Hapus</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Scoopy</td>
+                            <td>P 2468 IJ</td>
+                            <td>Honda</td>
+                            <td>2022</td>
+                            <td>Rp90.000</td>
+                            <td>Maintenance</td>
+                            <td>
+                                <button class="btn-1">Edit</button>
+                                <button class="btn-2">Hapus</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <h4>Tentang</h4>
+                <p>Rental Motor terpercaya</p>
+            </div>
+
+            <div>
+                <h4>Lokasi</h4>
+                <p>Jl Gajah Mada No.13</p>
+            </div>
+
+            <div>
+                <h4>Kontak</h4>
+                <p>08123456789</p>
+                <p>jayamotor@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
