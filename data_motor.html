@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Motor - Rental Motor Jaya</title>
+    <link rel="icon" type="image/png" href="logo_rentalmotor.png">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-
         <nav>
             <div class="nav-container">
                 <div class="logo">
@@ -19,7 +19,13 @@
                     <span>Rental Motor Jaya</span>
                 </div>
 
-                <div class="menu">
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu" id="navMenu">
                     <a href="index.html">Dashboard</a>
                     <a href="data_motor.html">Data Motor</a>
                     <a href="data_customer.html">Data Customer</a>
@@ -33,26 +39,81 @@
             <h1>Kelola Data Motor</h1>
             <p>Tambah dan kelola data motor rental</p>
         </div>
-
     </header>
 
-    <!-- MAIN -->
     <main class="layout">
-
         <section>
 
-            <!-- FORM (ISI TETAP, CUMA DIBUNGKUS) -->
-            <h2>Tambah Motor</h2>
+            <!-- TOMBOL -->
+            <button id="btnTambah" class="btn-tambah">Tambah Motor</button>
+
+            <!-- MODAL -->
+            <div id="modalMotor" class="modal">
+                <div class="modal-content">
+
+                    <span class="close" onclick="closeModal()">&times;</span>
+
+                    <h2>Tambah Motor</h2>
+
+                    <br>
+
+                    <form class="form-motor" id="formMotor">
+
+                        <div class="form-group">
+                            <label>Nama Motor</label>
+                            <input type="text" id="nama">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Nomor Motor</label>
+                            <input type="text" id="nomor">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Merk</label>
+                            <input type="text" id="merk">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tahun</label>
+                            <input type="number" id="tahun">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Harga Sewa / Hari</label>
+                            <input type="number" id="harga">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Status</label>
+                            <select id="status">
+                                <option value="Tersedia">Tersedia</option>
+                                <option value="Disewa">Disewa</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn-simpan">Simpan</button>
+                    </form>
+                </div>
+            </div>
+
+            <h2>Filter Berdasarkan Merk</h2>
+
+            <div class="motor-filter">
+                <select id="filterMerk">
+                    <option value="">Semua Merk</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Yamaha">Yamaha</option>
+                    <option value="Suzuki">Suzuki</option>
+                    <option value="Kawasaki">Kawasaki</option>
+                </select>
+                <button type="button" id="btnShowMotor" class="btn-showMotor">Tampilkan</button>
+            </div>
+
+            <h2>Cari Data Motor</h2>
 
             <form class="search-form">
-                <input type="text" placeholder="Nama Motor">
-                <input type="text" placeholder="Nomor Motor">
-                <input type="text" placeholder="Merk">
-                <input type="number" placeholder="Tahun">
-                <input type="number" placeholder="Harga Sewa / Hari">
-                <input type="file">
-
-                <button type="submit">Simpan</button>
+                <input type="text" id="searchMotor" placeholder="Cari nama /  nomor motor">
             </form>
 
             <!-- TABLE -->
@@ -72,7 +133,7 @@
                         </tr>
                     </thead>
 
-                    <tbody>
+                    <tbody id="motorTable">
                         <tr>
                             <td>Beat Street</td>
                             <td>P 1234 AB</td>
@@ -81,8 +142,8 @@
                             <td>Rp80.000</td>
                             <td>Tersedia</td>
                             <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
+                                <button class="btn-edit">Edit</button>
+                                <button class="btn-hapus">Hapus</button>
                             </td>
                         </tr>
 
@@ -94,58 +155,20 @@
                             <td>Rp150.000</td>
                             <td>Disewa</td>
                             <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Vario 160</td>
-                            <td>P 5678 EF</td>
-                            <td>Honda</td>
-                            <td>2024</td>
-                            <td>Rp120.000</td>
-                            <td>Tersedia</td>
-                            <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Aerox</td>
-                            <td>P 9876 GH</td>
-                            <td>Yamaha</td>
-                            <td>2023</td>
-                            <td>Rp130.000</td>
-                            <td>Tersedia</td>
-                            <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>Scoopy</td>
-                            <td>P 2468 IJ</td>
-                            <td>Honda</td>
-                            <td>2022</td>
-                            <td>Rp90.000</td>
-                            <td>Maintenance</td>
-                            <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
+                                <div class="aksi-btn">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
+
                 </table>
             </div>
 
         </section>
-
     </main>
 
-    <!-- FOOTER -->
     <footer>
         <div class="footer-container">
             <div>
@@ -165,6 +188,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 

@@ -20,7 +20,13 @@
                     <span>Rental Motor Jaya</span>
                 </div>
 
-                <div class="menu">
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu" id="navMenu">
                     <a href="index.html">Dashboard</a>
                     <a href="data_motor.html">Data Motor</a>
                     <a href="data_customer.html">Data Customer</a>
@@ -41,6 +47,14 @@
     <main class="layout">
 
         <section>
+
+            <h2>Cari Data Customer</h2>
+
+            <form class="search-form">
+                <input type="text" placeholder="Cari data...">
+                <button type="submit">Cari</button>
+            </form>
+
             <h2>Daftar Customer</h2>
 
             <div class="table-container">
@@ -64,8 +78,10 @@
                             <td>Jember</td>
                             <td><a href="riwayat_customer.html">Lihat Riwayat</a></td>
                             <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
+                                <div class="aksi-btn">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -76,8 +92,10 @@
                             <td>Banyuwangi</td>
                             <td><a href="riwayat_customer.html">Lihat Riwayat</a></td>
                             <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
+                                <div class="aksi-btn">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -88,8 +106,10 @@
                             <td>Bondowoso</td>
                             <td><a href="riwayat_customer.html">Lihat Riwayat</a></td>
                             <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
+                                <div class="aksi-btn">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -100,8 +120,10 @@
                             <td>Jember</td>
                             <td><a href="riwayat_customer.html">Lihat Riwayat</a></td>
                             <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
+                                <div class="aksi-btn">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </div>
                             </td>
                         </tr>
 
@@ -112,8 +134,10 @@
                             <td>Banyuwangi</td>
                             <td><a href="riwayat_customer.html">Lihat Riwayat</a></td>
                             <td>
-                                <button class="btn-1">Edit</button>
-                                <button class="btn-2">Hapus</button>
+                                <div class="aksi-btn">
+                                    <button class="btn-edit">Edit</button>
+                                    <button class="btn-hapus">Hapus</button>
+                                </div>
                             </td>
                         </tr>
                     </tbody>
@@ -141,6 +165,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 
 </body>
 

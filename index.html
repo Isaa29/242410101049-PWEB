@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    
+
     <header class="hero">
 
         <!-- NAVBAR -->
@@ -21,8 +21,13 @@
                     <span>Rental Motor Jaya</span>
                 </div>
 
-                <!-- MENU -->
-                <div class="menu">
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu" id="navMenu">
                     <a href="index.html">Dashboard</a>
                     <a href="data_motor.html">Data Motor</a>
                     <a href="data_customer.html">Data Customer</a>
@@ -76,12 +81,7 @@
 
         <section>
             <h2>Aktivitas Terbaru</h2>
-
-            <!-- FORM  -->
-            <form class="search-form">
-                <input type="text" placeholder="Cari data...">
-                <button type="submit">Cari</button>
-            </form>
+            <br>
 
             <!-- TABEL -->
             <div class="table-container">
@@ -124,15 +124,21 @@
             <div class="sidebar-left">
                 <h3>Statistik Rental</h3><br>
 
-                <label><input type="checkbox"> Motor Tersedia</label><br>
-                <label><input type="checkbox"> Motor Disewa</label>
+                <label><input type="checkbox" id="cbTersedia"> Motor Tersedia</label><br>
+                <label><input type="checkbox" id="cbDisewa"> Motor Disewa</label>
 
-                <p>Total Motor : 20</p><br>
-                <p>Motor Tersedia : 12</p>
-                <meter value="12" min="0" max="20"></meter>
+                <p>Total Motor : <span id="totalMotor">0</span></p><br>
 
-                <p>Motor Disewa : 8</p>
-                <meter value="8" min="0" max="20"></meter>
+                <p>Motor Tersedia : <span id="motorTersedia">0</span></p>
+                <meter id="meterTersedia" value="0" min="0" max="0"></meter>
+
+                <p>Motor Disewa : <span id="motorDisewa">0</span></p>
+                <meter id="meterDisewa" value="0" min="0" max="0"></meter>
+
+                <br>
+
+                <p>Total Nilai : <span id="totalNilai">Rp 0</span></p>
+                <p>Status Stok : <span id="statusStok">-</span></p>
             </div>
 
             <!-- KANAN -->
@@ -166,7 +172,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
